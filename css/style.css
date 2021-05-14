@@ -1,0 +1,50 @@
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url('../media/vids/background_vid1.gif');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.conteiner {
+  width: 80%;
+  margin: auto;
+  background: white;
+
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  margin-top: 10px;
+  height: 15vh;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.content1 {
+  width: calc(100% - 372px - 20px);
+  float: left;
+  margin: 10px;
+}
+
+.content2 {
+  width: auto;
+  float: right;
+  margin: 10px;
+  border-left: 2px solid black;
+  padding-left: 10px;
+}
+
+.content1 {
+  height: 40px;
+}
