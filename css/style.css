@@ -5,12 +5,12 @@
 }
 
 .background {
-  background-image: url('https://uidister.sirv.com/background_vid.gif');
+  /* background-image: url('https://uidister.sirv.com/background_vid.gif');
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  float: left;
 }
 
 .conteiner {
