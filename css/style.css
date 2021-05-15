@@ -32,9 +32,8 @@
 }
 
 .content1 {
-  width: calc(100% - 372px - 20px);
+  width: 100%;
   float: left;
-  margin: 10px;
 }
 
 .content2 {
@@ -46,5 +45,11 @@
 }
 
 .content1 {
-  height: 40px;
+  height: 100vh;
+}
+
+.nav-icon {
+  height: 6vh;
+  position: relative;
+  left: 10px;
 }
