@@ -5,9 +5,9 @@
 }
 
 .background {
-  background-image: url('https://uidister.sirv.com/background_vid.gif');
-  background-size: cover;
-  background-position: center;
+  background: dimgrey;
+  /* background-size: cover;
+  background-position: center; */
   width: 100vw;
   height: 100vh;
   float: left;
