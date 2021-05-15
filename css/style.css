@@ -5,7 +5,7 @@
 }
 
 .background {
-  background-image: url('../media/vids/background_vid1.gif');
+  background-image: url('https://uidister.sirv.com/background_vid1.gif');
   background-size: cover;
   background-position: center;
   width: 100vw;
