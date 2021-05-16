@@ -8,9 +8,6 @@
   background: dimgrey;
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 100vh;
-  float: left;
 }
 
 .conteiner {
@@ -32,8 +29,11 @@
 }
 
 .content1 {
-  width: 100%;
+  width: calc(100% - 372px);
   float: left;
+  /* da rimuovere */
+  height: 100vh;
+  /*  */
 }
 
 .content2 {
@@ -44,12 +44,38 @@
   padding-left: 10px;
 }
 
-.content1 {
-  height: 100vh;
-}
-
 .nav-icon {
   height: 6vh;
+  float: left;
+}
+
+.info {
+  width: 100%;
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.navig {
+  font-size: 23px;
+  font-family: 'Pacifico', cursive;
+  width: calc(100% / 3)
+}
+
+.navigation {
   position: relative;
-  left: 10px;
+  display: inline-block;
+  width: calc(100% - 6vw);
+  text-align: center;
+}
+.scelta.navig {
+  float: left;
+}
+
+.tel.navig {
+  float: left;
+}
+
+.via.navig {
+  float: right;
 }
