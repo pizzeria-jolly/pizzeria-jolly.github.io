@@ -45,8 +45,12 @@
 }
 
 .nav-icon {
-  height: 6vh;
+  text-align: center;
+  font-size: 30px;
   float: left;
+  width: 3vw;
+  border: 2px solid black;
+  margin-left: 1vw;
 }
 
 .info {
