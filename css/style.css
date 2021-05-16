@@ -60,14 +60,7 @@
   display: table;
 }
 
-.navig {
-  font-size: 23px;
-  font-family: 'Pacifico', cursive;
-  width: calc(100% / 3)
-}
-
 .navigation {
-  position: relative;
   display: inline-block;
   width: calc(100% - 6vw);
   text-align: center;
@@ -75,4 +68,7 @@
 
 .scelta.navig, .tel.navig, .via.navig {
   float: left;
+  font-size: 23px;
+  font-family: 'Pacifico', cursive;
+  width: calc(100% / 3)
 }
