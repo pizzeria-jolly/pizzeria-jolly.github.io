@@ -8,6 +8,8 @@
   background: dimgrey;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 .conteiner {
@@ -28,14 +30,6 @@
   transform: translate(-50%, 0);
 }
 
-.content1 {
-  width: calc(100% - 372px);
-  float: left;
-  /* da rimuovere */
-  height: 100vh;
-  /*  */
-}
-
 .content2 {
   width: auto;
   float: right;
@@ -43,15 +37,13 @@
   padding-left: 10px;
 }
 
-/* inizio navigazione info */
-
-.nav-icon {
-  text-align: center;
-  font-size: 30px;
-  max-width: 3%;
-  margin-left: 1vw;
-  text-align: center;
+iframe {
+  -webkit-box-shadow: -8px 10px 17px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -8px 10px 17px 0px rgba(0,0,0,0.75);
+  box-shadow: -8px 10px 17px 0px rgba(0,0,0,0.75);
 }
+
+/* inizio info */
 
 .info {
   width: 100%;
@@ -77,8 +69,29 @@
 
 /* fine */
 
-iframe {
-  -webkit-box-shadow: -8px 10px 17px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -8px 10px 17px 0px rgba(0,0,0,0.75);
-  box-shadow: -8px 10px 17px 0px rgba(0,0,0,0.75);
+/* inizio navigazione */
+
+.mainNavig {
+  width: calc(100% - 372px);
+  float: left;
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
+
+.mainNavig > a {
+  min-width: 25%;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-size: 20px;
+  font-style: italic;
+  background: #eee;
+  text-align: center;
+}
+
+.mainNavig > a:hover {
+  background: #ccc;
+}
+/* fine navigazione */
