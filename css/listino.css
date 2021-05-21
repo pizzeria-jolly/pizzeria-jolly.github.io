@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  width: 50%;
+}
+
+.pizza {
+  position: relative;
+}
+
+.prezzo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nome {
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
