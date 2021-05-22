@@ -12,6 +12,10 @@
   position: relative;
 }
 
+.pizza:hover {
+  background: #aaa;
+}
+
 .prezzo {
   position: absolute;
   top: 0;
