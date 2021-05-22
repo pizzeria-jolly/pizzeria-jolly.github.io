@@ -37,7 +37,7 @@
   padding-left: 10px;
 }
 
-iframe {
+.content2 iframe {
   -webkit-box-shadow: -8px 10px 17px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -8px 10px 17px 0px rgba(0,0,0,0.75);
   box-shadow: -8px 10px 17px 0px rgba(0,0,0,0.75);
@@ -70,10 +70,9 @@ iframe {
 /* fine */
 
 /* inizio navigazione */
+.mainConteiner{width: calc(100% - 372px)}
 
 .mainNavig {
-  width: calc(100% - 372px);
-  float: left;
   position: relative;
   top: 10px;
   display: flex;
