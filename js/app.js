@@ -2,6 +2,7 @@ const home = document.querySelector('.home');
 const listino = document.querySelector('.listino');
 const novita = document.querySelector('.novita');
 const contatti = document.querySelector('.contatti');
+const mainNavig = document.querySelector('.mainNavig');
 
 // funzioni
 
@@ -33,6 +34,18 @@ function mouseHoverH() {
     .fromTo(home,1,{opacity:0.5},{opacity:1});
 };
 
+function contattiClick() {
+  const click = new TimelineMax();
+  let boh = document.querySelector('.cambio');
+  click.to(boh,1,{marginTop:'60px',opacity:0})
+        .to(boh,1,{marginTop:'0',opacity:1});
+  setTimeout(function () {
+    boh.innerHTML = `<div class="done" style="font-size:100px;">yesss</div>`
+  },1000);
+  boh.classList.add('prova');
+  console.log(boh.classList[1]);
+};
+
 
 // fine funzioni
 
@@ -45,7 +58,7 @@ timel.fromTo(contatti, 1, {x: '-90vw'}, {x: '0%', ease: Power2.easeInOut})
       .fromTo(contatti,1, {padding: '5px'},{padding: '20px'})
       .fromTo(novita,1, {padding: '5px'},{padding: '20px'}, "-=1")
       .fromTo(listino,1, {padding: '5px'},{padding: '20px'}, "-=1")
-      .fromTo(home,1, {padding: '5px'},{padding: '20px'}, "-=1")
+      .fromTo(home,1, {padding: '5px'},{padding: '20px'}, "-=1")//padding++
       .to(contatti,1, {borderRadius: '15px'})
       .to(novita,1, {borderRadius: '15px'}, "-=1")
       .to(listino,1, {borderRadius: '15px'}, "-=1")
@@ -53,10 +66,4 @@ timel.fromTo(contatti, 1, {x: '-90vw'}, {x: '0%', ease: Power2.easeInOut})
       .to(contatti,1, {padding: '5px'})
       .to(novita,1, {padding: '5px'})
       .to(listino,1, {padding: '5px'})
-      .to(home,1, {padding: '5px'});
-
-
-contatti.addEventListener('mouseover', mouseHoverC);
-novita.addEventListener('mouseover', mouseHoverN);
-listino.addEventListener('mouseover', mouseHoverL);
-home.addEventListener('mouseover', mouseHoverH);
+      .to(home,1, {padding: '5px'});//padding--

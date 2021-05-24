@@ -76,12 +76,12 @@
   position: relative;
   top: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: black;
   width: 100%;
 }
 
-.mainNavig > a {
+.mainNavig > span {
   min-width: 25%;
   text-decoration: none;
   color: black;
@@ -90,10 +90,11 @@
   font-style: italic;
   background: #eee;
   text-align: center;
+  align-items: center;
   margin-bottom: 15px;
 }
 
-.mainNavig > a:hover {
+.mainNavig > span:hover {
   background: #ccc;
 }
 /* fine navigazione */
