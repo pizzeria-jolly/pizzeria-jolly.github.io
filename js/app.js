@@ -49,7 +49,7 @@ timel.fromTo(contatti, 1, {x: '-90vw'}, {x: '0%', ease: Power2.easeInOut})
       .to(contatti,1, {borderRadius: '15px'})
       .to(novita,1, {borderRadius: '15px'}, "-=1")
       .to(listino,1, {borderRadius: '15px'}, "-=1")
-      .to(home,1, {borderRadius: '15px'}, "-=1")//border
+      .to(home,1, {borderRadius: '15px'}, "-=1")//border radius
       .to(contatti,1, {padding: '5px'})
       .to(novita,1, {padding: '5px'})
       .to(listino,1, {padding: '5px'})
