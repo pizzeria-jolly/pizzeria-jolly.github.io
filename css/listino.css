@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 
-.conteiner {
+.pagina {
+  width: 100%;
+  display: flex;
+}
+
+.conteinerListino1, .conteinerListino2 {
   width: 50%;
 }
 
 .pizza {
   position: relative;
+  padding: 5px;
 }
 
 .pizza:hover {
@@ -18,8 +24,9 @@
 
 .prezzo {
   position: absolute;
-  top: 0;
+  top: 20%;
   right: 0;
+  font-weight: bold;
 }
 
 .nome {
