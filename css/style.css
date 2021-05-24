@@ -77,6 +77,8 @@
   top: 10px;
   display: flex;
   justify-content: space-around;
+  color: black;
+  width: 100%;
 }
 
 .mainNavig > a {
@@ -88,9 +90,15 @@
   font-style: italic;
   background: #eee;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .mainNavig > a:hover {
   background: #ccc;
 }
 /* fine navigazione */
+
+
+.cambio iframe {
+
+}
