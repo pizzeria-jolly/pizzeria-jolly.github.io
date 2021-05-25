@@ -40,6 +40,15 @@ function contattiClick() {
   click.to(boh,1,{marginTop:'60px',opacity:0})
         .to(boh,1,{marginTop:'0',opacity:1});
   setTimeout(function () {
+    boh.innerHTML = `<div>funziona</div>`}, 1000);
+};
+
+function listinoClick() {
+  const click = new TimelineMax();
+  let boh = document.querySelector('.cambio');
+  click.to(boh,1,{marginTop:'60px',opacity:0})
+        .to(boh,1,{marginTop:'0',opacity:1});
+  setTimeout(function () {
     boh.innerHTML = `<div class="pagina">
 
       <div class="conteinerListino1">
@@ -258,9 +267,7 @@ function contattiClick() {
       </div>
     </div>`
   },1000); //inserire html del listino
-  boh.classList.add('prova');
-  console.log(boh.classList[1]);
-};
+}; //testo molto lungo :O
 
 
 // fine funzioni

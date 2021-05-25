@@ -92,6 +92,7 @@
   text-align: center;
   align-items: center;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .mainNavig > span:hover {
