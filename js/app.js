@@ -17,7 +17,7 @@ function contattiClick() {
     click.fromTo(fb,1,{display:'block',width:0},{width:'340px'});
     setTimeout(contattiFbShow(),1000);
   } else {
-    contattiFbShow();
+    contattiFbShow2();
   };
   function contattiFbShow () {
     if (boh.classList[1] != 'seeingContatti') {
@@ -33,6 +33,23 @@ function contattiClick() {
           click.to(wrong,0.1,{x:'-5px'})
                 .to(wrong,0.05,{x:'5px'})
                 .to(wrong,0.1,{x:0});
+        };
+      };
+  };
+  function contattiFbShow2 () {
+    if (boh.classList[1] != 'seeingContatti') {
+      boh.classList.add('seeingContatti');
+      boh.classList.remove('seeingHome', 'seeingNovita', 'seeingListino');
+      click.to(boh,1,{marginTop:'60px',opacity:0})
+            .to(boh,1,{marginTop:'0',opacity:1});
+      setTimeout(function () {
+        boh.innerHTML = `<div>funziona</div>`
+      }, 1000);
+    }else {
+      for (var i = 0; i < 3; i++) {
+        click.to(wrong,0.1,{x:'-5px'})
+              .to(wrong,0.05,{x:'5px'})
+              .to(wrong,0.1,{x:0});
       };
     };
   };
