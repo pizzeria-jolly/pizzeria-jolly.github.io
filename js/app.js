@@ -303,7 +303,8 @@ function listinoClick() {
     };
   };
 
-}; //testo molto lungo :O
+};
+//testo molto lungo :O
 
 // fine funzioni
 
