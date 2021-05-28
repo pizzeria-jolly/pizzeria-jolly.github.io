@@ -1,11 +1,69 @@
+//VARIABILI
+
 const home = document.querySelector('.home');
 const listino = document.querySelector('.listino');
 const novita = document.querySelector('.novita');
 const contatti = document.querySelector('.contatti');
 const mainConteiner = document.querySelector('.mainConteiner');
 const fb = document.querySelector('.fbj');
+const timel = new TimelineMax();
+
+//EVENTI
+
+contatti.addEventListener('click', contattiClick);
+listino.addEventListener('click', listinoClick);
+novita.addEventListener('click', novitaClick);
+home.addEventListener('click', homeClick);
 
 // funzioni
+
+function homeClick() {
+  const click = new TimelineMax();
+  let boh = document.querySelector('.cambio');
+  let wrong = document.querySelector('.home');
+
+  if (fb.classList[1] == 'Hidden') {
+    fb.classList.remove('Hidden');
+    click.fromTo(fb,1,{display:'block',width:0},{width:'340px'});
+    setTimeout(contattiFbShow(),1000);
+  } else {
+    contattiFbShow2();
+  };
+  function contattiFbShow () {
+    if (boh.classList[1] != 'seeingHome') {
+      boh.classList.add('seeingHome');
+      boh.classList.remove('seeingNovita', 'seeingContatti', 'seeingListino');
+      click.to(boh,1,{marginTop:'60px',opacity:0})
+            .to(boh,1,{marginTop:'0',opacity:1});
+      setTimeout(function () {
+        boh.innerHTML = `<div class="test">Ho cambiato un po di animazioni su pulsanti qui sopra, basta premerli per vederle.</div>`
+      }, 2000);
+    } else {
+        for (var i = 0; i < 3; i++) {
+          click.to(wrong,0.1,{x:'-5px'})
+                .to(wrong,0.05,{x:'5px'})
+                .to(wrong,0.1,{x:0});
+        };
+      };
+  };
+  function contattiFbShow2 () {
+    if (boh.classList[1] != 'seeingHome') {
+      boh.classList.add('seeingHome');
+      boh.classList.remove('seeingNovita', 'seeingContatti', 'seeingListino');
+      click.to(boh,1,{marginTop:'60px',opacity:0})
+            .to(boh,1,{marginTop:'0',opacity:1});
+      setTimeout(function () {
+        boh.innerHTML = `<div class="test">Ho cambiato un po di animazioni su pulsanti qui sopra, basta premerli per vederle.</div>`
+      }, 1000);
+    }else {
+      for (var i = 0; i < 3; i++) {
+        click.to(wrong,0.1,{x:'-5px'})
+              .to(wrong,0.05,{x:'5px'})
+              .to(wrong,0.1,{x:0});
+      };
+    };
+  };
+};
 
 function novitaClick() {
   const click = new TimelineMax();
@@ -74,7 +132,7 @@ function contattiClick() {
       click.to(boh,1,{marginTop:'60px',opacity:0})
             .to(boh,1,{marginTop:'0',opacity:1});
       setTimeout(function () {
-        boh.innerHTML = `<div>funziona</div>`
+        boh.innerHTML = `<div>Stai guardando i contatti</div>`
       }, 2000);
     } else {
         for (var i = 0; i < 3; i++) {
@@ -91,7 +149,7 @@ function contattiClick() {
       click.to(boh,1,{marginTop:'60px',opacity:0})
             .to(boh,1,{marginTop:'0',opacity:1});
       setTimeout(function () {
-        boh.innerHTML = `<div>funziona</div>`
+        boh.innerHTML = `<div>Stai guardando i contatti</div>`
       }, 1000);
     }else {
       for (var i = 0; i < 3; i++) {
@@ -354,9 +412,8 @@ function listinoClick() {
 };
 //testo molto lungo :O
 
-// fine funzioni
 
-const timel = new TimelineMax();
+//ANIMAZIONE INIZIALE
 
 timel.fromTo(contatti, 1, {x: '-90vw'}, {x: '0%', ease: Power2.easeInOut})
       .fromTo(novita, 1, {x: '-90vw'}, {x: '0%', ease: Power2.easeInOut})
