@@ -7,6 +7,54 @@ const fb = document.querySelector('.fbj');
 
 // funzioni
 
+function novitaClick() {
+  const click = new TimelineMax();
+  let boh = document.querySelector('.cambio');
+  let wrong = document.querySelector('.novita');
+
+  if (fb.classList[1] == 'Hidden') {
+    fb.classList.remove('Hidden');
+    click.fromTo(fb,1,{display:'block',width:0},{width:'340px'});
+    setTimeout(contattiFbShow(),1000);
+  } else {
+    contattiFbShow2();
+  };
+  function contattiFbShow () {
+    if (boh.classList[1] != 'seeingNovita') {
+      boh.classList.add('seeingNovita');
+      boh.classList.remove('seeingHome', 'seeingContatti', 'seeingListino');
+      click.to(boh,1,{marginTop:'60px',opacity:0})
+            .to(boh,1,{marginTop:'0',opacity:1});
+      setTimeout(function () {
+        boh.innerHTML = `<div>Stai guardando le novità</div>`
+      }, 2000);
+    } else {
+        for (var i = 0; i < 3; i++) {
+          click.to(wrong,0.1,{x:'-5px'})
+                .to(wrong,0.05,{x:'5px'})
+                .to(wrong,0.1,{x:0});
+        };
+      };
+  };
+  function contattiFbShow2 () {
+    if (boh.classList[1] != 'seeingNovita') {
+      boh.classList.add('seeingNovita');
+      boh.classList.remove('seeingHome', 'seeingContatti', 'seeingListino');
+      click.to(boh,1,{marginTop:'60px',opacity:0})
+            .to(boh,1,{marginTop:'0',opacity:1});
+      setTimeout(function () {
+        boh.innerHTML = `<div>Stai guardando le novità</div>`
+      }, 1000);
+    }else {
+      for (var i = 0; i < 3; i++) {
+        click.to(wrong,0.1,{x:'-5px'})
+              .to(wrong,0.05,{x:'5px'})
+              .to(wrong,0.1,{x:0});
+      };
+    };
+  };
+};
+
 function contattiClick() {
   const click = new TimelineMax();
   let boh = document.querySelector('.cambio');
