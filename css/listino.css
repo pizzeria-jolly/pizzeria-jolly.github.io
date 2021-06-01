@@ -9,8 +9,10 @@
   display: flex;
 }
 
-.conteinerListino1, .conteinerListino2 {
-  width: 50%;
+.tittleListino {font-weight: bolder;font-size: 30px;padding: 5px;text-align: center;}
+
+.conteinerListino1, .conteinerListino2, .conteinerListino3 {
+  width: calc(100% / 3);
 }
 
 .pizza {
