@@ -24,7 +24,8 @@ function homeClick() {
 
   if (fb.classList[1] == 'Hidden') {
     fb.classList.remove('Hidden');
-    click.fromTo(fb,1,{display:'block',width:0},{width:'340px'});
+    click.fromTo(fb,1,{display:'block',width:0},{width:'340px'})
+          .to(boh,1,{width:'100%'}, "-=1.1");
     setTimeout(contattiFbShow(),1000);
   } else {
     contattiFbShow2();
@@ -72,7 +73,8 @@ function novitaClick() {
 
   if (fb.classList[1] == 'Hidden') {
     fb.classList.remove('Hidden');
-    click.fromTo(fb,1,{display:'block',width:0},{width:'340px'});
+    click.fromTo(fb,1,{display:'block',width:0},{width:'340px'})
+          .to(boh,1,{width:'100%'}, "-=1.1");
     setTimeout(contattiFbShow(),1000);
   } else {
     contattiFbShow2();
@@ -120,7 +122,8 @@ function contattiClick() {
 
   if (fb.classList[1] == 'Hidden') {
     fb.classList.remove('Hidden');
-    click.fromTo(fb,1,{display:'block',width:0},{width:'340px'});
+    click.fromTo(fb,1,{display:'block',width:0},{width:'340px'})
+          .to(boh,1,{width:'100%'}, "-=1.1");
     setTimeout(contattiFbShow(),1000);
   } else {
     contattiFbShow2();
@@ -503,6 +506,7 @@ function listinoClick() {
         },1000); //inserire html del listino
 
       };
+      click.to(boh,0.1,{width:'80vw'}, "-=1")
     },1000);
   };//if
 
