@@ -182,7 +182,7 @@ function listinoClick() {
 
         setTimeout(function () {
           $('.cambio').load('nav/listino.html')
-        },1000); //inserire html del listino
+        },1000); //jQuery del listino
 
       };
       click.to(boh,0.1,{width:'80vw'}, "-=1")
